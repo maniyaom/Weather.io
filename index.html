@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather.io</title>
+    <link rel="stylesheet" href="Style/utils.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/responsive.css">
+
+    <script src="config.js"></script>
+    <script defer src="Script/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Started -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Weather.io</h2>
+            <img src="Media/Icons/cross-icon.png" class="cross-icon nav-icons" onclick="removeItems()">
+        </div>
+        <div class="nav-links">
+            <span class="link-text" onclick="getLocation()" aria-selected="false">Your City</span>
+            <a href="#" class="link-text">City</a>
+            <a href="#" class="link-text">About Us</a>
+            <a href="#" class="link-text">Contact Us</a>
+        </div>
+        <div class="mxr-25 flex justify-center align-center search-bar-div">
+            <input type="text" placeholder="Search Here" id="city_search_bar">
+            <button class="search-btn" id="city_search_btn">Search</button>
+        </div>
+        <div onclick="showItems()">
+            <img src="Media/Icons/hamburger-icon.png" class="hamburger-icon nav-icons">
+        </div>
+    </nav>
+    <!-- Navbar Ended -->
+
+    <div class="myt-30" id="error-message-div">
+        <h2 style="text-align: center;">No Location Found !!</h2>
+        <span class="d-block text-align-center myt-20 cursor-pointer" onclick="getLocation()">Return Home</span>
+    </div>
+
+    <div class="main myt-60">
+        <div class="left-main">
+            <div class="top-left-main">
+                <div class="h-100 mxl-25">
+                    <h1 class="myt-20" id="city-name"></h1>
+                    <span class="d-block text-medium" id="localtime-label">Local Time : </span>
+                    <span class="d-block text-medium" id="chanceOfRain"></span>
+                    <span class="d-block text-medium" id="chanceOfSnow"></span>
+                    <h2 class="myt-25 text-xl" id="temp-main-left"></h2>
+                </div>
+                <div class="round mxr-25" id="top-left-main-icon"></div>
+            </div>
+
+            <div class="center-left-main mxr-10" id="center-left-main-div">
+                <!-- Filled By JavaScript -->
+            </div>
+
+            <div>
+                <div>
+                    <span class="myt-60 myb-20 d-block mxl-10">3 Day Weather Forecast</span>
+                </div>
+                <div id="right-main-info-div">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+
+            <div class="bottom-left-main myt-20">
+                <div class="title flex justify-between align-center h-20pr">
+                    <span class="mxl-25 font-weight-600">Air Conditions</span>
+                    <button class="more-info-btn mxr-10 font-weight-600 font-color-white">More Info</button>
+                </div>
+
+                <div class="flex">
+                    <div class="w-50pr mxl-25">
+                        <div class="bottom-left-main-card myt-10">
+                            <div class="flex align-center">
+                                <img src="Media/Icons/real-feel-icon.png" class="icon">
+                                <span class="text-m1 font-weight-600 mxl-10">Real Feel</span>
+                            </div>
+                            <div class="mxl-25 text-large myt-10 font-weight-600" id="real-feel-value-bottom-left-main">
+                                30&deg;C</div>
+                        </div>
+
+                        <div class="bottom-left-main-card myt-20">
+                            <div class="flex align-center">
+                                <img src="Media/Icons/wind-icon.png" class="icon">
+                                <span class="text-m1 font-weight-600 mxl-10">Wind</span>
+                            </div>
+                            <div class="mxl-25 text-large myt-10 font-weight-600"
+                                id="wind-speed-value-bottom-left-main">30&deg;C</div>
+                        </div>
+                    </div>
+
+                    <div class="w-50pr mxl-25">
+                        <div class="bottom-left-main-card myt-10">
+                            <div class="flex align-center">
+                                <img src="Media/Icons/temperature-icon.png" class="icon">
+                                <span class="text-m1 font-weight-600">Min. Temp.</span>
+                            </div>
+                            <div class="mxl-25 text-large myt-10 font-weight-600" id="min-temp-value-bottom-left-main">
+                                30&deg;C</div>
+                        </div>
+
+                        <div class="bottom-left-main-card myt-20">
+                            <div class="flex align-center">
+                                <img src="Media/Icons/temperature-icon.png" class="icon">
+                                <span class="text-m1 font-weight-600">Max. Temp.</span>
+                            </div>
+                            <div class="mxl-25 text-large myt-10 font-weight-600" id="max-temp-value-bottom-left-main">
+                                30&deg;C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 40px;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

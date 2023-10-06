@@ -1,0 +1,144 @@
+.h-100{
+    height: 100%;
+}
+
+.h-20pr{
+    height: 20%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50pr{
+    width: 50%;
+}
+
+.myt-10{
+    margin-top: 10px;
+}
+
+.myt-20{
+    margin-top: 20px;
+}
+
+.myt-25{
+    margin-top: 25px;
+}
+
+.myt-30{
+    margin-top: 30px;
+}
+
+.myt-60{
+    margin-top: 60px;
+}
+
+.myb-20{
+    margin-bottom: 20px;
+}
+
+.mx10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mxl-55{
+    margin-left: 55px;
+}
+
+.mxl-10{
+    margin-left: 10px;
+}
+
+.mxr-25{
+    margin-right: 25px;
+}
+
+.mxr-10{
+    margin-right: 10px;
+}
+
+.mxl-25{
+    margin-left: 25px;
+}
+
+.mxl-45{
+    margin-left: 45px;
+}
+
+.mxl-65{
+    margin-left: 65px;
+}
+
+.mxl-110{
+    margin-left: 110px;
+}
+
+.myb-10{
+    margin-bottom: 10px;
+}
+
+.text-large{
+    font-size: 2.1em;
+}
+
+.text-xl{
+    font-size: 2.2em;
+}
+
+.text-medium{
+    font-size: 1.2em;
+}
+
+.text-m1{
+    font-size: 1.6em;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.font-color-white{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.inline{
+    display: inline;
+}
+
+.d-block{
+    display: block;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.test-border{
+    border: 1px solid red;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.round-8{
+    border-radius: 8px;
+}
